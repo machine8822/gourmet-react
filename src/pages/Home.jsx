@@ -4,8 +4,11 @@ const Home = () => {
     return (
         //Apply id to it otherwise style h1 applies to all.
         <div id="home">
-            <h1>I love home</h1>
-            <h2>Home is for the heart</h2>
+            <div class="home-content">
+                <img src="./../images/rouge.jpg" alt="Not Working"></img>
+                <img src="./../images/Wine.jpg" alt="Not Working"></img>
+                <img src="./images/cigar.jpg" alt="Not Working"></img>
+            </div>
         </div>
     );
 };

@@ -1,8 +1,25 @@
-#main-nav ul {
+/*#main-nav ul {
     padding-left: 0;
+}*/
+#main-nav li {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: pink;
 }
-
 #main-nav a {
     text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 1100px) {
+    #main-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 

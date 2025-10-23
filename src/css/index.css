@@ -1,3 +1,10 @@
 body {
-  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  background: repeating-linear-gradient(
+    to bottom,
+    red 0px, /* First color, starts at 0px */
+    pink 500px, /* First color, ends at 20px (stripe height) */
+    pink 500px, /* Second color, starts at 20px */
+    red 1000px  /* Second color, ends at 40px (total pattern height) */
+  );
 }

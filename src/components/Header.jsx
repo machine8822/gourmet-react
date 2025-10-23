@@ -3,7 +3,7 @@ import './../css/Header.css';
 const Header = () => {
     return (
         <header id="main-header">
-            <h1>Header</h1>
+            <h1>Gourmet Life</h1>
         </header>
     );
 };
