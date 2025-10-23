@@ -1,0 +1,4 @@
+/*Apply id to it otherwise style h1 applies to all.*/
+#home h1 {
+    color: red;
+}
