@@ -1,16 +1,16 @@
 
-function CheeseRow(row) {
+function WineRow(row) {
     return (
         <tr>
-            {/*<td><img src={require('./../images/rouge.jpg')} alt="Not working"/></td>*/}
             <td><img src={row.image} alt={row.name} /></td>
             <td>{row.name}</td>
             <td>{row.type}</td>
             <td>{row.location}</td>
-            <td>{row.timeAged}</td>
+            <td>{row.pair}</td>
             <td>{row.price}</td>
         </tr>
+        
     );
 };
 
-export default CheeseRow;
+export default WineRow;

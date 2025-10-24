@@ -1,0 +1,22 @@
+#checkout img {
+    width: 70%;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 15px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#checkout table {
+    margin-left: auto;
+    margin-right: auto;
+}
+#checkout table, #checkout th, #checkout td {
+    padding: 10px;
+    text-align: center;
+}
+#checkout th, #checkout td {
+    border-top: 2px solid black;
+    background-color: red;
+}
+
