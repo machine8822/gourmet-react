@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gourmet-react/static/css/main.4c05628a.css",
+    "main.js": "/gourmet-react/static/js/main.fb14e7a5.js",
+    "static/media/rouge.jpg": "/gourmet-react/static/media/rouge.3f71fc92523d5c27f125.jpg",
+    "index.html": "/gourmet-react/index.html",
+    "main.4c05628a.css.map": "/gourmet-react/static/css/main.4c05628a.css.map",
+    "main.fb14e7a5.js.map": "/gourmet-react/static/js/main.fb14e7a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c05628a.css",
+    "static/js/main.fb14e7a5.js"
+  ]
+}
