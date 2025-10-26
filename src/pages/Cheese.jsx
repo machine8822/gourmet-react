@@ -28,21 +28,21 @@ const Cheese = () => {
                     timeAged="3 Months"
                     price="$9.99/lb"/>
                 <CheeseRow
-                    image="../images/Camembert.jpg"
+                    image="./images/Camembert.jpg"
                     name="Camembert"
                     type="Soft Cow Milk Cheese"
                     location="France"
                     timeAged="5-6 Months"
                     price="$15.99/lb"/>
                 <CheeseRow
-                    image="../images/Appenzeller.jpg"
+                    image="./images/Appenzeller.jpg"
                     name="Appenzeller"
                     type="Hard Cow Milk Cheese"
                     location="Switzerland"
                     timeAged="3-6 Months"
                     price="$19.99/lb"/>
                 <CheeseRow
-                    image="../images/Humboldt.jpg"
+                    image="./images/Humboldt.jpg"
                     name="Humboldt Fog"
                     type="Goat Milk Cheese"
                     location="USA"
