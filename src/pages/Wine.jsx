@@ -14,28 +14,28 @@ const Wine = () => {
                     <th>Price</th>
                 </tr>
                 <WineRow
-                image="../images/wine1.jpg"
+                image="./images/wine1.jpg"
                 name="Chateau Margaux"
                 type="Red Wine"
                 location="France"
                 pair="Lamb, beef, and duck"
                 price="$32.99"/>
                 <WineRow
-                image="../images/wine2.jpg"
+                image="./images/wine2.jpg"
                 name="Pahlmeyer Merlot"
                 type="Red Wine"
                 location="USA"
                 pair="Dark chocolate and duck"
                 price="$27.99"/>
                 <WineRow
-                image="../images/wine3.jpg"
+                image="./images/wine3.jpg"
                 name="Antinori Tignanello"
                 type="Red Wine"
                 location="Italy"
                 pair="Boar and cheese"
                 price="$45.99"/>
                 <WineRow
-                image="../images/wine4.jpg"
+                image="./images/wine4.jpg"
                 name="Domaine de la Romanee-Conti"
                 type="Red Wine"
                 location="France"
