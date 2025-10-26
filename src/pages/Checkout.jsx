@@ -16,7 +16,7 @@ const Checkout = () => {
                 </tr>
             </table>
 
-            <img src={"../images/logoRed.png"} alt="Gallery" id="gallery" />
+            <img src={"./images/logoRed.png"} alt="Gallery" id="gallery" />
             
         </div>
     );

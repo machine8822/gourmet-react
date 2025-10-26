@@ -14,7 +14,7 @@ const Cheese = () => {
                     <th>Price</th>
                 </tr>
                 <CheeseRow 
-                    image="./images/Rouge.jpg"
+                    image="./images/rouge.jpg"
                     name="Ruby Rouge"
                     type="Farmhouse Dutch Gouda"
                     location="Netherlands"
