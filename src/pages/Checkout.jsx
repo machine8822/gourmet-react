@@ -1,7 +1,6 @@
 import "./../css/Checkout.css";
 
 const Checkout = () => {
-    //document.getElementById("gallery").onpointerdown = Gallery;
     return (
         <div id="checkout">
             <table>
@@ -24,17 +23,7 @@ const Checkout = () => {
     
 };
 
-let count = 0;
-function Gallery() {
-    const gall = document.getElementById("gallery");
-    alert("Gallery clicked");
-    if(count === 0) {
-        gall.scr= require('../images/wine5.jpg');
-        count++;
-        alert("First image");
-        return;
-    }
-};
+
 
 
 export default Checkout;
