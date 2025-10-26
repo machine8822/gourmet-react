@@ -14,14 +14,14 @@ const Cheese = () => {
                     <th>Price</th>
                 </tr>
                 <CheeseRow 
-                    image='../images/rouge.jpg'
+                    image="./images/Rouge.jpg"
                     name="Ruby Rouge"
                     type="Farmhouse Dutch Gouda"
                     location="Netherlands"
                     timeAged="6-7 Months"
                     price="$12.99/lb"/>
                 <CheeseRow 
-                    image="../images/Shropshire.jpg"
+                    image="./images/Shropshire.jpg"
                     name="Shropshire Blue"
                     type="Blue Cheese"
                     location="England"
