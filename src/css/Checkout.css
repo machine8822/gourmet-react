@@ -1,12 +1,4 @@
-#checkout img {
-    width: 70%;
-    max-width: 500px;
-    max-height: 400px;
-    padding: 15px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 #checkout table {
     margin-left: auto;
     margin-right: auto;
@@ -19,4 +11,27 @@
     border-top: 2px solid black;
     background-color: red;
 }
-
+#forward-arrow, #backward-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+}
+#forward-arrow {
+    right: 25%;
+}
+#backward-arrow {
+    left: 25%;
+}
+#slideshow {
+    position: relative;
+    width: 100%;
+}
+#slideshow img {
+    width: 70%;
+    max-width: 500px;
+    height: 400px;
+    padding: 15px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
