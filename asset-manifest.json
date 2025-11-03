@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/gourmet-react/static/css/main.4c05628a.css",
-    "main.js": "/gourmet-react/static/js/main.0ef70040.js",
+    "main.css": "/gourmet-react/static/css/main.f014890a.css",
+    "main.js": "/gourmet-react/static/js/main.30d1e70b.js",
+    "static/media/logoRed.png": "/gourmet-react/static/media/logoRed.f5dda4c9ce060567300f.png",
+    "static/media/Appenzeller.jpg": "/gourmet-react/static/media/Appenzeller.e8df3f3d7c9cad0c7f3f.jpg",
     "static/media/rouge.jpg": "/gourmet-react/static/media/rouge.3f71fc92523d5c27f125.jpg",
     "index.html": "/gourmet-react/index.html",
-    "main.4c05628a.css.map": "/gourmet-react/static/css/main.4c05628a.css.map",
-    "main.0ef70040.js.map": "/gourmet-react/static/js/main.0ef70040.js.map"
+    "main.f014890a.css.map": "/gourmet-react/static/css/main.f014890a.css.map",
+    "main.30d1e70b.js.map": "/gourmet-react/static/js/main.30d1e70b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c05628a.css",
-    "static/js/main.0ef70040.js"
+    "static/css/main.f014890a.css",
+    "static/js/main.30d1e70b.js"
   ]
 }
