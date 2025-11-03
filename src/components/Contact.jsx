@@ -30,6 +30,7 @@ const Contact = () => {
   return (
     <div id="contact-form">
       <form onSubmit={onSubmit}>
+        <h2>Contact Form</h2>
        <p>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
