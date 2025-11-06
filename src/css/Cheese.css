@@ -1,21 +1,5 @@
-#cheese table {
-    margin-left: auto;
-    margin-right: auto;
-}
-#cheese table, #cheese th, #cheese td {
-    padding: 5px;
+#cheese h1 {
     text-align: center;
 }
-#cheese th, #cheese td {
-    border-top: 2px solid black;
-    background-color: red;
-}
-#cheese img {
-    width: 60%;
-    max-height: 400px;
-    padding: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 

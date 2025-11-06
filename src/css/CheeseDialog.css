@@ -1,0 +1,45 @@
+.w3-modal-content {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.w3-container {
+  background: repeating-linear-gradient(
+    to bottom,
+    red 0px, /* First color, starts at 0px */
+    pink 200px, /* First color, ends at 20px (stripe height) */
+    pink 200px, /* Second color, starts at 20px */
+    red 400px  /* Second color, ends at 40px (total pattern height) */
+  );
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 80%;
+}
+.w3-container img{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.w3-container p {
+    font-size: 18px;
+}
+#dialog-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#dialog-close:hover {
+    cursor: pointer;
+}
+
+
+
+
