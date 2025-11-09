@@ -1,4 +1,4 @@
-.cheese-indiv {
+.cigar-indiv {
     width: 80%;
     background-color: red;
     margin-left: auto;
@@ -6,10 +6,10 @@
     margin-bottom: 20px;
     border-radius: 15px;
 }
-.cheese-indiv:hover {
+.cigar-indiv:hover {
     cursor: pointer;
 }
-.cheese-indiv img {
+.cigar-indiv img {
     max-width: 400px;
     max-height: 300px;
     padding: 10px;
@@ -17,8 +17,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-.cheese-indiv h1 {
+.cigar-indiv h1 {
     padding-bottom: 10px;
 }
-
-
