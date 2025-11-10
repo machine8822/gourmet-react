@@ -1,6 +1,7 @@
 import "./../css/Home.css";
 import './../images/wine.jpg';
 import './../images/cigar.jpg';
+import Map from '../components/Map';
 
 const Home = () => {
     return (
@@ -10,6 +11,9 @@ const Home = () => {
                 <img src={require('./../images/rouge.jpg')} alt="Not working"/>
                 <img src={require('./../images/wine.jpg')} alt="Not working"/>
                 <img src={require('./../images/cigar.jpg')} alt="Not working"/>
+            </div>
+            <div class="home-map">
+                <Map />
             </div>
         </div>
     );
