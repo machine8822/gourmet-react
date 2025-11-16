@@ -10,13 +10,13 @@ const CheeseList = (props) => {
 
     useEffect(() => {
         const loadCheese = async() => {
-            const response = await axios.get("http://localhost:3001/api/cheese/");
+            const response = await axios.get("https://server-gourmet.onrender.com/api/cheese/");
             setCheeses(response.data.splice(0, props.num));
         };
         loadCheese();
     }, []);
 
-    const addCheeseIndiv = (props) => {
+    const addCheese = (props) => {
         setCheeses((cheeses) => [...cheeses, props]);
     };
     
@@ -32,7 +32,7 @@ const CheeseList = (props) => {
             <button id="add-cheese" onClick={openAddDialog}>Add Cheese</button>
 
             {showAddDialog ? 
-                <AddCheeseDialog closeAddDialog={closeAddDialog} addCheese={addCheeseIndiv} />
+                <AddCheeseDialog closeAddDialog={closeAddDialog} addCheese={addCheese} />
              : ("")}
             
             {cheeses.map((cheese) => (

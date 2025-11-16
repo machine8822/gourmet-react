@@ -5,19 +5,19 @@ const AddCheeseDialog = (props) => {
     const [inputValues, setInputValues] = useState({});
     const [result, setResult] = useState("");
 
-    const onSubmit = async (props) => {
-        props.preventDefault();
+    const onSubmit = async (event) => {
+        event.preventDefault();
         setResult("Submitting...");
-        const formData = new FormData(props.target);
-        const response = await fetch("http://localhost:3001/api/cheese/", {
+        const formData = new FormData(event.target);
+        const response = await fetch("https://server-gourmet.onrender.com/api/cheese/", {
             method: "POST",
             body: formData
         });
 
         if (response.status === 200) {
             setResult("Cheese added successfully!");
-            props.target.reset();
-            //props.addCheese(await response.json());
+            event.target.reset();
+            props.addCheese(await response.json());
             props.closeAddDialog();
         } else {
             console.log("Error:", response);
