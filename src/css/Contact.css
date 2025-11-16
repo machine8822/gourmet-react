@@ -15,4 +15,13 @@
     margin-right: auto;
     display: block;
 }
+#name, #email, #message {
+    padding: 10px;
+    display: inline-block;
+}
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
 
