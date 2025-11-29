@@ -1,5 +1,6 @@
 import "../css/CheeseIndiv.css";
 import EditCheeseDialog from "./EditCheeseDialog";
+import DeleteCheeseDialog from "./DeleteCheeseDialog";
 import CheeseDialog from "./CheeseDialog";
 import React, { useState } from "react";
 
@@ -23,7 +24,15 @@ const CheeseIndiv = (props) => {
         setShowEditDialog(false);
     };
     
-    
+    //State for delete
+    const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+
+    const openDeleteDialog = () => {
+        setShowDeleteDialog(true);
+    };
+    const closeDeleteDialog = () => {
+        setShowDeleteDialog(false);
+    };
     
     return (
         <>
@@ -39,7 +48,6 @@ const CheeseIndiv = (props) => {
             ):("")}
             {showEditDialog?(
                 <EditCheeseDialog closeDialog={closeEditDialog}
-                //editCheese={editCheese}
                 updateCheese={props.updateCheese}
                 _id={props._id}
                 name={props.name}
@@ -49,12 +57,21 @@ const CheeseIndiv = (props) => {
                 timeAged={props.timeAged}
                 price={props.price} />
             ):("")}
+            {showDeleteDialog?(
+                <DeleteCheeseDialog closeDialog={closeDeleteDialog} 
+                name={props.name}
+                _id={props._id} 
+                //updateCheese={props.updateCheese}
+                deleteCheese={props.deleteCheese} 
+                />
+
+            ):("")}
             <section className="cheese-indiv" >
                 <img src={"https://server-gourmet.onrender.com/images/" + props.image} onClick={showPopDetails} alt={props.name} />
                 <h1>{props.name}</h1>
                 <div className="cheese-indiv-icons">
                     <a href="#" onClick={openEditDialog}>&#9998;</a>
-                    <a href="#" >&#x2715;</a>
+                    <a href="#" onClick={openDeleteDialog}>&#x2715;</a>
                 </div>
             </section>
         </>

@@ -31,6 +31,10 @@ const CheeseList = (props) => {
     const updateCheese = (update) => {
         setCheeses(cheeses.map((cheese) => (cheese._id === update._id ? update : cheese)));
     };
+    //To delete after deleting cheese
+    const deleteCheese = (id) => {
+        setCheeses(cheeses.filter((cheese) => cheese._id !== id));
+    };
 
     return (
         <div className="cheese-list">
@@ -45,6 +49,7 @@ const CheeseList = (props) => {
                     key={cheese._id}
                     _id={cheese._id}
                     updateCheese={updateCheese}
+                    deleteCheese={deleteCheese}
                     image={cheese.image}
                     name={cheese.name}
                     type={cheese.type}

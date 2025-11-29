@@ -36,7 +36,6 @@ const EditCheeseDialog = (props) => {
         if (response.status === 200) {
             setResult("Cheese updated successfully!");
             event.target.reset(); //resets form fields
-            //props.editCheese(await response.json());
             props.updateCheese(await response.json());
             props.closeDialog();
         } else {
