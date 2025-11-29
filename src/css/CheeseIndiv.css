@@ -6,7 +6,7 @@
     margin-bottom: 20px;
     border-radius: 15px;
 }
-.cheese-indiv:hover {
+.cheese-indiv img:hover {
     cursor: pointer;
 }
 .cheese-indiv img {
@@ -20,5 +20,17 @@
 .cheese-indiv h1 {
     padding-bottom: 10px;
 }
-
-
+/* Edit and Delete icons */
+.cheese-indiv-icons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    padding: 10px;
+}
+.cheese-indiv-icons a {
+    color: white;
+    text-decoration: none;
+}
+.cheese-indiv-icons a:hover {
+    cursor: pointer;
+}

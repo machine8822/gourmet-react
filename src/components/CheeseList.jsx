@@ -27,6 +27,11 @@ const CheeseList = (props) => {
         setShowAddDialog(false);
     }
 
+    //To update after editing cheese
+    const updateCheese = (update) => {
+        setCheeses(cheeses.map((cheese) => (cheese._id === update._id ? update : cheese)));
+    };
+
     return (
         <div className="cheese-list">
             <button id="add-cheese" onClick={openAddDialog}>Add Cheese</button>
@@ -38,7 +43,8 @@ const CheeseList = (props) => {
             {cheeses.map((cheese) => (
                 <CheeseIndiv
                     key={cheese._id}
-                    id={cheese._id}
+                    _id={cheese._id}
+                    updateCheese={updateCheese}
                     image={cheese.image}
                     name={cheese.name}
                     type={cheese.type}

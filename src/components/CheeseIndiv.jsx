@@ -1,8 +1,10 @@
 import "../css/CheeseIndiv.css";
-import {useState} from "react";
+import EditCheeseDialog from "./EditCheeseDialog";
 import CheeseDialog from "./CheeseDialog";
+import React, { useState } from "react";
 
 const CheeseIndiv = (props) => {
+    //State for pop-up dialog
     const [showPop, setPop] = useState(false);
 
     const showPopDetails = () => {
@@ -11,7 +13,18 @@ const CheeseIndiv = (props) => {
     const hidePopDetails = () => {
         setPop(false);
     }
+    //State for edit dialog
+    const [showEditDialog, setShowEditDialog] = useState(false);
 
+    const openEditDialog = () => {
+        setShowEditDialog(true);
+    };
+    const closeEditDialog = () => {
+        setShowEditDialog(false);
+    };
+    
+    
+    
     return (
         <>
             {showPop?(
@@ -24,10 +37,25 @@ const CheeseIndiv = (props) => {
                     timeAged={props.timeAged}
                     price={props.price} />
             ):("")}
-            <section className="cheese-indiv" onClick={showPopDetails}>
-                <img src={"https://server-gourmet.onrender.com/images/" + props.image} alt={props.name} />
+            {showEditDialog?(
+                <EditCheeseDialog closeDialog={closeEditDialog}
+                //editCheese={editCheese}
+                updateCheese={props.updateCheese}
+                _id={props._id}
+                name={props.name}
+                image={props.image}
+                type={props.type}
+                location={props.location}
+                timeAged={props.timeAged}
+                price={props.price} />
+            ):("")}
+            <section className="cheese-indiv" >
+                <img src={"https://server-gourmet.onrender.com/images/" + props.image} onClick={showPopDetails} alt={props.name} />
                 <h1>{props.name}</h1>
-                
+                <div className="cheese-indiv-icons">
+                    <a href="#" onClick={openEditDialog}>&#9998;</a>
+                    <a href="#" >&#x2715;</a>
+                </div>
             </section>
         </>
     );
